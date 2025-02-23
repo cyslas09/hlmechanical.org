@@ -37,6 +37,7 @@
 
         .hero {
             position: relative;
+            images/logo-updated.png
             background: url('images/construction-site.jpg') no-repeat center center/cover;
             height: 100vh;
             display: flex;
