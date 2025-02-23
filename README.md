@@ -1,4 +1,4 @@
-<!index.html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,57 +6,101 @@
     <title>HL Mechanical - Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #001f3f;
             color: white;
         }
 
         .navbar {
             background-color: #001233 !important;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
         }
 
         .hero {
+            position: relative;
             background: url('images/construction-site.jpg') no-repeat center center/cover;
-            padding: 100px 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
             text-align: center;
             color: white;
         }
 
-        .hero img {
-            height: 100px;
-            width: auto;
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
         }
 
-        .owner-info {
-            font-size: 18px;
-            margin-top: 10px;
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        .services {
-            background: white;
-            color: black;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .quote-form {
-            background: white;
-            color: black;
-            padding: 20px;
-            border-radius: 5px;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .btn-primary {
-            background-color: #001233;
-            border-color: #001233;
+            background-color: #004080;
+            border-color: #004080;
+            font-size: 18px;
+            padding: 12px 20px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #003060;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background: #001233;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #004080;
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">HL Mechanical</a>
@@ -74,51 +118,28 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Logo -->
     <header class="hero">
-        <div class="container text-center">
+        <div class="container text-center hero-content">
             <img src="images/logo-updated.png" alt="HL Mechanical Logo">
-            <p class="owner-info">Harry L. Clark - Owner</p>
+            <h1 class="owner-info">Harry L. Clark - Owner</h1>
             <p>Residential, Commercial & Industrial Services</p>
             <p><strong>Call: 520-909-4674 | Email: harryc@q.com</strong></p>
             <p><strong>Location: Tucson, AZ</strong></p>
+            <a href="#quote" class="btn btn-primary mt-3">Request a Quote</a>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="container services mt-5">
-        <h2 class="text-center">Our Services</h2>
-        <ul>
-            <li>Custom Homes, Garages, Shops, Office Buildings</li>
-            <li>Remodels (Baths & Kitchens)</li>
-            <li>Metal Roofing & Shingle Roofing</li>
-            <li>AC Sales & Services (Trane, Rheem, York)</li>
-        </ul>
-    </section>
-
-    <!-- Quote Request Form -->
-    <section class="quote-form">
+    <footer class="footer">
         <div class="container">
-            <h2 class="text-center">Request a Quote</h2>
-            <form id="quoteForm">
-                <div class="mb-3">
-                    <label>Name:</label>
-                    <input type="text" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label>Email:</label>
-                    <input type="email" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label>Service Needed:</label>
-                    <textarea class="form-control" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Get Quote</button>
-            </form>
+            <p>&copy; 2024 HL Mechanical | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-**
