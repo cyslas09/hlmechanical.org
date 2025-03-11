@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #001233;
+}
+
+.navbar {
+    background-color: #001233;
+    padding: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('../images/construction-site.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #004080;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
