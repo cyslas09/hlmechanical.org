@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - HL Mechanical</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -15,7 +17,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -23,17 +25,154 @@
         </div>
     </nav>
 
-    <section class="container">
-        <h2>About HL Mechanical</h2>
-        <p>HL Mechanical has been providing top-quality residential, commercial, and industrial services since 1994.</p>
-        <p>We specialize in:</p>
-        <ul>
-            <li>Custom Homes, Garages, and Shops</li>
-            <li>Remodels (Baths & Kitchens)</li>
-            <li>Metal Roofing & Shingle Roofing</li>
-            <li>AC Sales & Services (Trane, Rheem, York)</li>
-        </ul>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="text-center">About HL Mechanical</h2>
+            <p class="text-center">Providing expert mechanical services since 1994.</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        HL Mechanical has been delivering high-quality residential, commercial, and industrial services for over 25 years. We specialize in custom homes, remodels, roofing, and AC installation and servicing. 
+                    </p>
+                    <p>
+                        Our team of experienced professionals is dedicated to delivering reliable, long-lasting results using top-tier materials and industry-best practices. We work closely with our clients to ensure every project meets their exact needs and exceeds expectations.
+                    </p>
+                    <p>
+                        As a bonded and insured company, we provide peace of mind and a commitment to excellence in every project. From custom-built homes to commercial installations, we’ve built a reputation for trust and reliability.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/construction-site.jpg" alt="About HL Mechanical">
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 HL Mechanical | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: #001233;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #001233;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #001233;
+            line-height: 1.6;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #001233;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #004080;
+        }
+    </style>
 
 </body>
 </html>
