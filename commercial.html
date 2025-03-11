@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commercial Services - HL Mechanical</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-updated.png" alt="HL Mechanical Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Commercial Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="text-center">Commercial Services</h2>
+            <p class="text-center">Professional commercial construction and renovation services since 1994.</p>
+            
+            <div class="services-content">
+                <div class="service-item">
+                    <img src="images/commercial-1.jpg" alt="Office Building Construction">
+                    <h3>Office Building Construction</h3>
+                    <p>High-quality office buildings designed for efficiency and comfort.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/commercial-2.jpg" alt="Commercial Renovations">
+                    <h3>Commercial Renovations</h3>
+                    <p>Upgrade your existing commercial space with modern designs and energy efficiency.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/commercial-3.jpg" alt="HVAC Systems">
+                    <h3>HVAC Systems</h3>
+                    <p>Professional installation and maintenance of heating and cooling systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 HL Mechanical | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: #001233;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #001233;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+        }
+
+        .services-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services-content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            width: 320px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .service-item h3 {
+            font-size: 22px;
+            color: #004080;
+            margin-top: 15px;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            color: #001233;
+            line-height: 1.5;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            background-color: #001233;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #004080;
+        }
+    </style>
+
+</body>
+</html>
