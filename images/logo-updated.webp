@@ -1,1 +1,4 @@
 <img src="images/logo-updated.webp" alt="HL Mechanical Logo">
+git add .
+git commit -m "Added new logo to header"
+git push origin main
