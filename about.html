@@ -50,6 +50,27 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"HL Mechanical did an amazing job on our custom home. Professional and on time!"</p>
+                    <h4>- John D.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Highly recommend HL Mechanical for AC installation and roofing. Excellent work!"</p>
+                    <h4>- Sarah T.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"We hired them for a major remodel, and they exceeded our expectations!"</p>
+                    <h4>- Mark L.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -159,6 +180,47 @@
             box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
         }
 
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 10px;
+        }
+
+        .testimonial {
+            flex: 0 0 300px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            scroll-snap-align: start;
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: #001233;
+            margin-bottom: 10px;
+        }
+
+        .testimonial h4 {
+            font-size: 18px;
+            color: #004080;
+            margin: 0;
+        }
+
         /* Footer */
         .footer {
             background-color: #001233;
@@ -182,3 +244,4 @@
 
 </body>
 </html>
+
