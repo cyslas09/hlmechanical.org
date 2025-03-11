@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HL Mechanical - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-updated.png" alt="HL Mechanical Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to HL Mechanical</h1>
+                <p>Your trusted partner for residential, commercial, and industrial projects.</p>
+                <a href="contact.html" class="btn-primary">Request a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <i class="fas fa-home service-icon"></i>
+                    <h4>Custom Homes & Shops</h4>
+                    <p>Design and build high-quality custom homes, garages, and shops.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h4>Remodeling</h4>
+                    <p>Expert remodeling for kitchens, baths, and entire homes.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-hard-hat service-icon"></i>
+                    <h4>Roofing</h4>
+                    <p>Installation of metal and shingle roofing.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-snowflake service-icon"></i>
+                    <h4>AC Sales & Services</h4>
+                    <p>Installation and service of Trane, Rheem, and York AC systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="text-center">Why Choose HL Mechanical?</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <i class="fas fa-check-circle service-icon"></i>
+                    <h4>Experienced Professionals</h4>
+                    <p>Over 25 years of experience in the industry.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h4>Bonded & Insured</h4>
+                    <p>Fully bonded and insured for your protection.</p>
+                </div>
+                <div class="grid-item">
+                    <i class="fas fa-star service-icon"></i>
+                    <h4>Quality Guaranteed</h4>
+                    <p>We stand by our work and offer quality assurance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 HL Mechanical | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            color: #001233;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #001233;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+        }
+
+        .hero {
+            background: url('images/construction-site.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #004080;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #003060;
+        }
+
+        .services-overview,
+        .why-choose-us {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #004080;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #001233;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #004080;
+        }
+    </style>
+
+</body>
+</html>
